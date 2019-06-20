@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.flipboard.bottomsheet.BottomSheetLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/bottonSheet">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp"
+        tools:context=".MainActivity">
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="817-no-internet-connection.json"
+            app:lottie_loop="true" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/submit"
+            android:text="click"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="click"
+            android:id="@+id/bottomSheet"/>
+
+        <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textWatcher"
+            app:labelText="Help Me">
+
+
+            <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                android:id="@+id/extended_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="14"
+                android:inputType="number"/>
+
+        </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+    </LinearLayout>
+</com.flipboard.bottomsheet.BottomSheetLayout>
